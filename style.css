@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 100%);
+} 
+h1, h2, h4, a, button{
+    font-family: 'Raleway', sans-serif;
+    transition: .25s;
+}
+header, form{
+    background-color: hsl(217, 28%, 15%);
+}
+.intro, .links, .get-started, .productive, .profile, .inputs, footer, .info-details, .infos, .socials{
+    display: flex;
+}
+.get-started, .productive, .comments, footer{
+    justify-content: center;
+    align-items: center;
+}
+.intro, .links{
+    justify-content: space-between;
+}
+.intro{
+    padding: 2.5rem;
+}
+.links{
+    list-style: none;
+    width: 20%;
+}
+.links a{
+    text-decoration: none;
+    opacity: 70%;
+}
+.links a:hover{
+    opacity: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.get-started{
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+h1, .productive h2{
+    font-size: 3rem;
+}
+.get-started button, .inputs button{
+    width: 20%;
+    padding: 1rem;
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.get-started button:hover, .inputs button:hover{
+    background-color:  hsl(176, 68%, 64%);
+}
+.get-started img:last-child{
+    width: 100%;
+}
+main{
+    background-color: hsl(218, 28%, 13%);
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 50%;
+    gap: 5rem;
+    margin: auto;
+    text-align: center;
+}
+.features div h4{
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+.productive{
+    margin: 5rem 3rem;
+    gap: 2.5rem;
+}
+.productive-infos p{
+    margin: 1rem 0;
+}
+.flyo-link{
+    color: hsl(176, 68%, 64%);
+}
+.flyo-link:hover{
+    color: hsl(0, 0%, 100%);
+}
+.comments{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    margin: 9rem 4rem;
+}
+.comments > img{
+    position: absolute;
+    top: -18%;
+    left: 3%;
+}
+.comments article{
+    width: 30%;
+    background-color:  hsl(219, 30%, 18%);
+    padding: 2rem;
+    z-index: 1;
+}
+.comments article img{
+    width: 2.2rem;
+    border-radius: 50%;
+}
+.profile{
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.profile-info p:last-child{
+    font-size: .7rem;
+    opacity: 70%;
+}
+form{
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+form h2{
+    font-size: 2rem;
+}
+form p{
+    margin: 2rem 0;
+}
+.inputs input{
+    height: 30%;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+form button{
+    height: 30%;
+    flex: 1;
+    margin-left: 1rem;
+}
+footer{
+    justify-content: space-between;
+    background-color:  hsl(216, 53%, 9%);
+    height: 60vh;
+    padding: 0 3rem;
+}
+footer p, span, li{
+    opacity: 70%;
+}
+.flyo-info{
+    width: 20%;
+}
+.info-details{
+    margin-top: 1rem;
+    align-items: flex-start;
+    gap: .5rem;
+}
+.contact div:last-child, .infos ul li{
+    margin-top: 1rem;
+}
+.infos ul li:hover{
+    text-decoration: underline;
+    opacity: 100%;
+    cursor: pointer;
+}
+.infos{
+    gap: 5rem;
+}
+.infos ul{
+    list-style: none;
+}
+.socials{
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+.socials i:hover{
+    cursor: pointer;
+    color: hsl(176, 68%, 64%);
+}
