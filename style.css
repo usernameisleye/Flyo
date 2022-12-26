@@ -9,6 +9,9 @@ h1, h2, h4, a, button{
     font-family: 'Raleway', sans-serif;
     transition: .25s;
 }
+body{
+    background-color: hsl(218, 28%, 13%);
+}
 header, form{
     background-color: hsl(217, 28%, 15%);
 }
@@ -63,9 +66,6 @@ h1, .productive h2{
 .get-started img:last-child{
     width: 100%;
 }
-main{
-    background-color: hsl(218, 28%, 13%);
-}
 .features{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,10 +86,10 @@ main{
 .productive-infos p{
     margin: 1rem 0;
 }
-.flyo-link{
+.flyo-link a{
     color: hsl(176, 68%, 64%);
 }
-.flyo-link:hover{
+.flyo-link a:hover{
     color: hsl(0, 0%, 100%);
 }
 .comments{
@@ -105,6 +105,7 @@ main{
 }
 .comments article{
     width: 30%;
+    height: 40%;
     background-color:  hsl(219, 30%, 18%);
     padding: 2rem;
     z-index: 1;
@@ -127,6 +128,8 @@ form{
     padding: 2rem;
     border-radius: .5rem;
     text-align: center;
+    position: relative;
+    bottom: -10%;
 }
 form h2{
     font-size: 2rem;
@@ -141,6 +144,8 @@ form p{
     outline: none;
     border-radius: 2rem;
     padding: 1rem;
+    color: #000;
+    font-size: 1rem;
 }
 form button{
     height: 30%;
@@ -185,4 +190,65 @@ footer p, span, li{
 .socials i:hover{
     cursor: pointer;
     color: hsl(176, 68%, 64%);
+}
+
+@media screen and (max-width: 375px) {
+    .intro{
+        padding: 2rem;
+    }
+    .intro img{
+        width: 30%;
+        object-fit: contain;
+    }
+    .links{
+        width: 50%;
+    }
+    .links li{
+        font-size: .8rem;
+    }
+    .get-started > img, .productive > img ,.comments article, .inputs input, .inputs button, .flyo-info{
+        width: 100%;
+    }
+    .productive, .comments, .inputs, footer, .infos{
+        flex-direction: column;
+    }
+    h1, .productive h2{
+        font-size: 2rem;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .get-started button{
+        width: 60%;
+    }
+    .comments{
+        margin: 9rem 1rem;
+    }
+    .comments > img{
+        top: -4%;
+        left: 3%;
+    }
+    form{
+        height: 50%;
+        width: 90%;
+        margin: 1rem;
+    }
+    form p{
+        font-size: 1rem;
+    }
+    .inputs button{
+        margin: 1rem 0 ;
+    }
+    footer{
+        align-items: initial;
+        height: max-content;
+        padding: 2rem 1rem;
+    }
+    .infos, footer{
+        gap: 2rem;
+    }
+    .socials{
+        justify-content: center;
+    }
 }
