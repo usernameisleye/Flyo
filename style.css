@@ -15,7 +15,7 @@ body{
 header, form{
     background-color: hsl(217, 28%, 15%);
 }
-.intro, .links, .get-started, .productive, .profile, .inputs, footer, .info-details, .infos, .socials{
+.intro, .links, .get-started, .productive, .profile, .inputs, footer, .info-details, .infos, .socials, .error-msg{
     display: flex;
 }
 .get-started, .productive, .comments, footer{
@@ -137,9 +137,15 @@ form h2{
 form p{
     margin: 2rem 0;
 }
-.inputs input{
-    height: 30%;
+.input-box{
     width: 70%;
+}
+.error-msg{
+    color: hsl(0, 100%, 63%);
+    margin: .5rem 1rem;
+}
+.input-box input{
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 2rem;
@@ -206,7 +212,7 @@ footer p, span, li{
     .links li{
         font-size: .8rem;
     }
-    .get-started > img, .productive > img ,.comments article, .inputs input, .inputs button, .flyo-info{
+    .get-started > img, .productive > img ,.comments article, .inputs input, .inputs button, .flyo-info, .input-box{
         width: 100%;
     }
     .productive, .comments, .inputs, footer, .infos{
