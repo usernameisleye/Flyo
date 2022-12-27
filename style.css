@@ -159,7 +159,7 @@ form button{
 footer{
     justify-content: space-between;
     background-color:  hsl(216, 53%, 9%);
-    height: 65vh;
+    height: 60vh;
     padding: 0 3rem;
 }
 footer p, span, li{
