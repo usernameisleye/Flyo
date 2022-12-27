@@ -96,7 +96,7 @@ h1, .productive h2{
     display: flex;
     gap: 1rem;
     position: relative;
-    margin: 9rem 4rem;
+    margin: 0 4rem 9rem 4rem;
 }
 .comments > img{
     position: absolute;
@@ -128,8 +128,6 @@ form{
     padding: 2rem;
     border-radius: .5rem;
     text-align: center;
-    position: relative;
-    bottom: -10%;
 }
 form h2{
     font-size: 2rem;
@@ -161,7 +159,7 @@ form button{
 footer{
     justify-content: space-between;
     background-color:  hsl(216, 53%, 9%);
-    height: 60vh;
+    height: 65vh;
     padding: 0 3rem;
 }
 footer p, span, li{
@@ -236,7 +234,6 @@ footer p, span, li{
         left: 3%;
     }
     form{
-        height: 50%;
         width: 90%;
         margin: 1rem;
     }
