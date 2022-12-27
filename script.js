@@ -3,13 +3,20 @@ const formInput = document.querySelector('form input');
 const errorMsg = document.querySelector('.error-msg')
 
 
-let inputValue = formInput.value;
+function checkInput(value){
+    const all = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return all.test(value);
+}
+
 flyoForm.addEventListener('submit', e =>{
-    e.preventDefault();
-    if(inputValue == ''){
-        errorMsg.innerHTML = 'Fill in input field';
+    if(formInput.value === ''){
+        e.preventDefault();
+        errorMsg.innerHTML = 'Email is required, Please enter your Email!';
+    }
+    else if(checkInput(formInput.value.trim())){
     }
     else{
-        errorMsg.innerHTML = 'Invalid email'
+        e.preventDefault();
+        errorMsg.innerHTML = 'Invalid email, Please input a valid email address';
     }
 })
