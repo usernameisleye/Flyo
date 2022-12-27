@@ -9,4 +9,7 @@ flyoForm.addEventListener('submit', e =>{
     if(inputValue == ''){
         errorMsg.innerHTML = 'Fill in input field';
     }
+    else{
+        errorMsg.innerHTML = 'Invalid email'
+    }
 })
