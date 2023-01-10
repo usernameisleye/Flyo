@@ -38,8 +38,6 @@ Users should be able to:
 - Solution URL: [https://github.com/usernameisleye/Flyo]
 - Live Site URL: [https://usernameisleye.github.io/Flyo/]
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
