@@ -128,6 +128,7 @@ form{
     padding: 2rem;
     border-radius: .5rem;
     text-align: center;
+    transform: translateY(50%);
 }
 form h2{
     font-size: 2rem;
@@ -159,8 +160,9 @@ form button{
 footer{
     justify-content: space-between;
     background-color:  hsl(216, 53%, 9%);
-    height: 60vh;
+    height: 80vh;
     padding: 0 3rem;
+    padding-top: 7rem;
 }
 footer p, span, li{
     opacity: 70%;
